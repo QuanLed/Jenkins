@@ -19,3 +19,12 @@
   
   ![image](https://user-images.githubusercontent.com/19218660/208486445-5468fdb0-eb62-4ce5-aae0-48879578a2c3.png)
 
+**Lesson 2: Run Jenkins on Tomcat**
+  Download Tomcat từ link: https://tomcat.apache.org/download-10.cgi
+  Setup JAVA_HOME, CLASSPATH and PATH, vi du: set JAVA_HOME=C:\Program Files\Java\jdk-17.0.5
+  Khoi dong Tomcat bang cau lenh: .\bin\startup.bat
+  Truy cap localhost:8080 de kiem tra
+  
+  ![image](https://user-images.githubusercontent.com/19218660/208732898-af5d6b0c-e43b-48e9-b575-3ee912252947.png)
+
+  
