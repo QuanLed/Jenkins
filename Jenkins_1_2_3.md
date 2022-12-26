@@ -32,3 +32,22 @@
   ![image](https://user-images.githubusercontent.com/19218660/208732898-af5d6b0c-e43b-48e9-b575-3ee912252947.png)
 
   
+**Lesson 3: Run Jenkins in Docker**
+
+  Download docker ztừ link: https://www.docker.com/docker-windows
+  
+  Cài đặt và run docker, kiểm tra docker bằng câu lệnh sau:
+  
+  `docker ps`
+  `docker info`
+  
+  Pull and run the cloudbees JENKINS container bằng câu lệnh sau:
+  
+  `docker pull jenkins/jenkins`
+  `docker run -p 8080 --name=jenkins-master jenkins/jenkins`
+  
+  Khi khởi chạy Jenkins thì sẽ tạo ra 1 password, nếu bạn bị quên mất thì có thể chạy câu lệnh sau để xem lại:
+  
+  `docker exec jenkins-master cat /var/jenkins_home/secrets/initialAdminPassword`
+  
+  
