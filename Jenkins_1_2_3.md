@@ -39,15 +39,39 @@
   Cài đặt và run docker, kiểm tra docker bằng câu lệnh sau:
   
   `docker ps`
+  
   `docker info`
   
   Pull and run the cloudbees JENKINS container bằng câu lệnh sau:
   
   `docker pull jenkins/jenkins`
+  
   `docker run -p 8080 --name=jenkins-master jenkins/jenkins`
   
   Khi khởi chạy Jenkins thì sẽ tạo ra 1 password, nếu bạn bị quên mất thì có thể chạy câu lệnh sau để xem lại:
   
   `docker exec jenkins-master cat /var/jenkins_home/secrets/initialAdminPassword`
   
+  **Publish Jenkins with Ngrok**
   
+  Cài đặt ngrok từ link: https://dashboard.ngrok.com/get-started/setup
+  
+  Ở phiên bản miễn phí, chúng ta sẽ bị giới hạn ở các điểm:
+
+      - Chỉ hỗ trợ HTTP và TCP
+      - Subdomain ngẫu nhiên
+      - Chỉ chạy được 1 proccess ngrok tại 1 thời điểm
+      - Giới hạn 4 tunnel / 1 process
+      - Giới hạn 40 connections / 1 phút
+      
+  Chạy ngrok.exe, giao diện của ngrok tương tự cmd
+  
+  Tạo tài khoản ngrok và set authtoken bằng câu lệnh sau:
+  
+  `ngrok config add-authtoken [mã token của tài khoản]`
+  
+  Publish port 8080 với cú pháp sau:
+  
+  `ngrok http 8080`
+  
+  Từ giờ bạn có thể truy cập Jenkins từ máy khác với link của ngrok.
