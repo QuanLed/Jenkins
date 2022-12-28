@@ -14,8 +14,30 @@
   
 **Lesson 5: Create User + Manage + Assign Roles**
   
-  Lesson 6: Basic Configurations
+**Lesson 6: Basic Configurations**
   
-  Để cấu hình thì vào Manage Jenkins > Configure System
+  Để cấu hình cho Jenkins thì vào Manage Jenkins > Configure System
   
+  Để cài đặt các Nodes (machines) thì vào Manage Jenkins > Manage Nodes and Clouds
   
+**Lesson 7: Create and setting a job**
+  
+  Create a job
+  
+  Setting Build Triggers
+  
+  How to trigger the job remotely
+  
+  How to chain job executions
+  
+**Lesson 8: Jenkins integration with GIT (SCM)**
+
+  Create a program and run it through command line
+  
+  Create a Jenkins job to run the program
+  
+  Add this program/project to Git
+  
+  Jenkins - add git plugin
+  
+  Configure Jenkins job to trigger the execution when a change is pushed to GitHub
